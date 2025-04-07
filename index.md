@@ -44,7 +44,7 @@
         </ul>
     </section>
     <footer>
-        <p>&copy; 2025 Medical Tourism Business. All rights reserved.</p>
+        <p>&copy; 2025 MediConnect. All rights reserved.</p>
     </footer>
 </body>
 </html>
