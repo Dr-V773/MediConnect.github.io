@@ -1,5 +1,5 @@
 title: MediConnect     # your site’s display title
-theme: jekyll-theme-cayman             # or the theme you selected
+theme: jekyll-theme-minimal             # or the theme you selected
 # navigation links (optional):
 navigation:
   - title: Home
