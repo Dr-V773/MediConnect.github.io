@@ -19,20 +19,15 @@
       <form action="https://example.com/submit-form" method="POST">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
-
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
-
         <label for="phone">Phone Number:</label>
         <input type="tel" id="phone" name="phone" required>
-
         <label for="location">Location Interests:</label>
         <textarea id="location" name="location" required></textarea>
-
         <button type="submit">Submit</button>
       </form>
     </section>
-
     <section>
       <h2>How It Works</h2>
       <ul>
