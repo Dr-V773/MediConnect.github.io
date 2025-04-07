@@ -12,6 +12,23 @@ header {
     text-align: center;
 }
 
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header h2 {
+    margin: 10px 0 20px;
+    font-size: 1.2em;
+    color: #f1f1f1;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
 section {
     padding: 20px;
     margin: 20px;
@@ -22,12 +39,6 @@ section {
 
 h2 {
     color: #333;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
 }
 
 form {
@@ -58,6 +69,15 @@ button {
 
 button:hover {
     background-color: #45a049;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 20px;
 }
 
 footer {
