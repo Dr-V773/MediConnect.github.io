@@ -11,7 +11,7 @@
         <h1>Premium Medical Care - For a Fraction of the Price</h1>
         <h2>Your single-price solution for comprehensive medical travel. Quality care without unexpected costs or exorbitant prices.</h2>
         </header>
-        <img src="images/header_image.jpg" alt="Medical Tourism Image">
+        <img src="images/header_image.jpeg" alt="Medical Tourism Image">
     <section>
         <h2>Services Coming Soon! Fill Out This Form to Know When We Go Live!</h2>
         <form action="https://example.com/submit-form" method="POST">
