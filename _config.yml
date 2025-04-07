@@ -1,0 +1,8 @@
+title: MediConnect     # your site’s display title
+theme: Cayman              # or the theme you selected
+# navigation links (optional):
+navigation:
+  - title: Home
+    url: /
+  - title: About
+    url: /about/
