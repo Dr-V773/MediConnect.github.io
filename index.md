@@ -9,7 +9,7 @@
   <header>
     <h1>Premium Medical Care — For a Fraction of the Price</h1>
     <h2>Your single‑price solution for comprehensive medical travel. Quality care without unexpected costs or exorbitant prices.</h2>
-    <img src="images/header_image.jpg" alt="Medical Tourism" class="center-image">
+    <img src="images/header_image.jpeg" alt="Medical Tourism" class="center-image">
   </header>
 
   <main>
