@@ -1,34 +1,24 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Medical Tourism</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Medical Tourism – MediConnect</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
     <h1>Premium Medical Care — For a Fraction of the Price</h1>
     <h2>Your single‑price solution for comprehensive medical travel. Quality care without unexpected costs or exorbitant prices.</h2>
-    <img src="images/header_image.jpeg" alt="Medical Tourism" class="center-image">
+    <img src="images/header_image.jpg" alt="Medical Tourism" class="center-image">
   </header>
 
   <main>
-    <section>
-      <h2>Services Coming Soon! Fill Out This Form to Know When We Go Live!</h2>
-      <form action="https://example.com/submit-form" method="POST">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" name="phone" required>
-        <label for="location">Location Interests:</label>
-        <textarea id="location" name="location" required></textarea>
-        <button type="submit">Submit</button>
-      </form>
+    <!-- ===== Intro / First Box ===== -->
+    <section class="intro">
+      <h2>MediConnect</h2>
     </section>
-    <section>
+    <!-- ===== How It Works ===== -->
+    <section class="how-it-works">
       <h2>How It Works</h2>
       <ul>
         <li>
@@ -48,9 +38,7 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 Medical Tourism Business. All rights reserved.</p>
+    <p>&copy; 2025 MediConnect. All rights reserved.</p>
   </footer>
 </body>
 </html>
-
-
