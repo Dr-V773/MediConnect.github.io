@@ -1,93 +1,97 @@
-/* 1. RESET & HIDE GITHUB OVERLAYS */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body > iframe,
-.github-fork-ribbon,
-.page-ribbon,
-div[style*="position: fixed"][style*="z-index"] {
-  display: none !important;
-}
-
-/* 2. BASE LAYOUT */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #ffffff;
-  color: #333;
-  line-height: 1.5;
-}
-header, main, footer {
-  position: relative;
-  z-index: 1;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* White background */
+    color: #333333; /* Dark grey text for readability */
 }
 
-/* 3. HEADER */
 header {
-  background-color: #003366;
-  color: #fff;
-  text-align: center;
-  padding: 2rem 1rem;
+    background-color: #003366; /* Dark blue background for a professional look */
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
+
 header h1 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
+    margin: 0;
+    font-size: 2em;
 }
+
 header h2 {
-  font-size: 1.1rem;
-  color: #f1f1f1;
-  margin-bottom: 1.5rem;
+    margin: 10px 0 20px;
+    font-size: 1.2em;
+    color: #f1f1f1;
 }
+
 .center-image {
-  display: block;
-  margin: 0 auto 2rem;
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
+    display: block;
+    margin: 20px auto;
+    max-width: 80%;
+    height: auto;
+    border-radius: 8px;
 }
 
-/* 4. INTRO (First Box) */
-.intro {
-  max-width: 800px;      /* controls width of the box */
-  margin: 2rem auto;     /* centers it */
-  padding: 1rem;         /* less side‑padding */
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
-  text-align: center;
-}
-.intro h2 {
-  font-size: 2rem;
-  color: #003366;
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-/* 5. HOW IT WORKS */
-.how-it-works {
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 1.5rem;
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-.how-it-works h2 {
-  color: #003366;
-  margin-bottom: 1rem;
-}
-.how-it-works ul {
-  list-style: none;
-}
-.how-it-works li {
-  margin-bottom: 1.2rem;
-  line-height: 1.4;
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* 6. FOOTER */
+h2 {
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input, textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #003366; /* Dark blue button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #002244; /* Slightly darker blue on hover */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
 footer {
-  background-color: #003366;
-  color: #fff;
-  text-align: center;
-  padding: 1.5rem 1rem;
-  margin-top: 2rem;
+    text-align: center;
+    padding: 20px;
+    background-color: #003366; /* Dark blue background */
+    color: white;
 }
