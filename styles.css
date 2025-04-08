@@ -7,10 +7,20 @@ body {
 }
 
 header {
-    background-color: #003366; /* Dark blue background for a professional look */
+    background-image: url('images/header_image.jpeg'); /* Background image */
+    background-size: cover;
+    background-position: center;
     color: white;
-    padding: 20px;
+    padding: 60px 20px; /* Increased padding for better visibility */
     text-align: center;
+    position: relative;
+}
+
+.header-content {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+    padding: 20px;
+    border-radius: 8px;
+    display: inline-block;
 }
 
 header h1 {
@@ -21,15 +31,6 @@ header h1 {
 header h2 {
     margin: 10px 0 20px;
     font-size: 1.2em;
-    color: #f1f1f1;
-}
-
-.center-image {
-    display: block;
-    margin: 20px auto;
-    max-width: 80%;
-    height: auto;
-    border-radius: 8px;
 }
 
 main {
