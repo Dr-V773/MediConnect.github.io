@@ -24,7 +24,7 @@ a:hover {
 /* Hero Section */
 .hero {
     position: relative;
-    background-image: url('images/MediConnet.jpeg'); /* Replace with your new image */
+    background-image: url('images/MediConnect.jpeg'); /* Replace with your new image */
     background-size: cover;
     background-position: center;
     height: 60vh;
