@@ -1,37 +1,56 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff; /* White background */
-    color: #333333; /* Dark grey text for readability */
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
 }
 
-header {
-    background-color: #003366; /* Dark blue background for a professional look */
+h1, h2 {
+    margin: 0;
+}
+
+a {
+    color: #003366;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background-image: url('images/MediConnect.jpeg'); /* Replace with your new image */
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
-    padding: 20px;
     text-align: center;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2em;
-}
-
-header h2 {
-    margin: 10px 0 20px;
-    font-size: 1.2em;
-    color: #f1f1f1;
-}
-
-.center-image {
-    display: block;
-    margin: 20px auto;
-    max-width: 80%;
-    height: auto;
+.hero .overlay {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    padding: 20px;
     border-radius: 8px;
 }
 
+.hero h1 {
+    font-size: 2.5em;
+}
+
+.hero h2 {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+/* Main Content */
 main {
     max-width: 1200px;
     margin: 0 auto;
@@ -39,45 +58,11 @@ main {
 }
 
 section {
-    padding: 20px;
     margin: 20px 0;
-    background-color: white;
+    padding: 20px;
+    background: white;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    color: #333;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    margin-top: 10px;
-}
-
-input, textarea {
-    margin-top: 5px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-button {
-    margin-top: 10px;
-    padding: 10px;
-    background-color: #003366; /* Dark blue button */
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #002244; /* Slightly darker blue on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 ul {
@@ -86,12 +71,46 @@ ul {
 }
 
 li {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+button {
+    padding: 10px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #00509e;
+}
+
+/* Footer */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #003366; /* Dark blue background */
+    background-color: #003366;
     color: white;
+    margin-top: 20px;
 }
