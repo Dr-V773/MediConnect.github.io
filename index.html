@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7L1QZTR1KH"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7L1QZTR1KH"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -12,29 +11,48 @@
 </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Medical Tourism</title>
+    <title>MediConnect</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="hero">
         <div class="overlay">
-            <h1>Premium Medical Care - For a Fraction of the Price</h1>
-            <h2>Your single-price solution for comprehensive medical travel. Quality care without unexpected costs or high prices.</h2>
+            <h1>MediConnect</h1>
+            <h2>Premium Medical Care - For a Fraction of the Price</h2>
+            <h3>Your single-price solution for comprehensive medical travel. Quality care without unexpected costs or exorbitant prices.</h3>
         </div>
     </header>
     <main>
         <section>
             <h2>Services Coming Soon! Fill Out This Form to Know When We Go Live!</h2>
-            <form action="https://formspree.io/f/mjkyjbpj" method="POST">
+            <form action="https://formspree.io/f/your-form-id" method="POST">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
+                
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
+                
                 <label for="phone">Phone Number:</label>
                 <input type="tel" id="phone" name="phone" required>
-                <label for="location">Location Interests:</label>
-                <textarea id="location" name="location" required></textarea>
+                
+                <label for="procedures">Select a Procedure:</label>
+                <select id="procedures" name="procedures" required onchange="toggleOtherProcedureInput(this)">
+                    <option value="">-- Select a Procedure --</option>
+                    <option value="Dental Surgery">Dental Surgery</option>
+                    <option value="Cosmetic Surgery">Cosmetic Surgery</option>
+                    <option value="Orthopedic Surgery">Orthopedic Surgery</option>
+                    <option value="Cardiology Procedures">Cardiology Procedures</option>
+                    <option value="Fertility Treatments">Fertility Treatments</option>
+                    <option value="Other">Other</option>
+                </select>
+                
+                <!-- This input field appears only if "Other" is selected -->
+                <div id="other-procedure-container" style="display: none; margin-top: 10px;">
+                    <label for="other-procedure">Please Specify:</label>
+                    <input type="text" id="other-procedure" name="other-procedure">
+                </div>
+                
                 <button type="submit">Submit</button>
             </form>
         </section>
@@ -59,5 +77,18 @@
     <footer>
         <p>&copy; 2025 MediConnect. All rights reserved.</p>
     </footer>
+    
+    <script>
+        // Function to toggle the visibility of the "Other Procedure" input field
+        function toggleOtherProcedureInput(selectElement) {
+            const otherProcedureContainer = document.getElementById('other-procedure-container');
+            if (selectElement.value === 'Other') {
+                otherProcedureContainer.style.display = 'block';
+            } else {
+                otherProcedureContainer.style.display = 'none';
+                document.getElementById('other-procedure').value = ''; // Clear the input field
+            }
+        }
+    </script>
 </body>
 </html>
