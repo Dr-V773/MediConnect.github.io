@@ -24,14 +24,10 @@ a:hover {
 /* Title Box */
 .title-box {
     text-align: center;
-    padding: 10px 0;
-    margin: 10px auto 20px;
-    font-size: 24px;
+    margin: 10px auto;
+    font-size: 20px; /* Reduced font size */
     font-weight: 700;
     color: #003366; /* Dark blue text */
-    border-bottom: 2px solid #003366; /* Thin underline for a subtle divider */
-    width: 100%; /* Full width */
-    max-width: 700px; /* Limit maximum width */
 }
 
 /* Hero Section */
