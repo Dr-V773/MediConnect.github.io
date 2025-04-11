@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-7L1QZTR1KH"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-  gtag('config', 'G-7L1QZTR1KH');
-</script>
+        gtag('config', 'G-7L1QZTR1KH');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MediConnect</title>
@@ -16,9 +16,11 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="title-box">
+        <h1>MediConnect</h1>
+    </div>
     <header class="hero">
         <div class="overlay">
-            <h1>MediConnect</h1>
             <h2>Premium Medical Care - For a Fraction of the Price</h2>
             <h3>Your single-price solution for comprehensive medical travel. Quality care without unexpected costs or exorbitant prices.</h3>
         </div>
@@ -40,10 +42,13 @@
                 <select id="procedures" name="procedures" required onchange="toggleOtherProcedureInput(this)">
                     <option value="">-- Select a Procedure --</option>
                     <option value="Dental Surgery">Dental Surgery</option>
+                     <option value="Cancer Treatment">Cosmetic Surgery</option>
                     <option value="Cosmetic Surgery">Cosmetic Surgery</option>
+                     <option value="Organ Transplants">Cosmetic Surgery</option>
                     <option value="Orthopedic Surgery">Orthopedic Surgery</option>
                     <option value="Cardiology Procedures">Cardiology Procedures</option>
                     <option value="Fertility Treatments">Fertility Treatments</option>
+                     <option value="Hair Transplant">Cosmetic Surgery</option>
                     <option value="Other">Other</option>
                 </select>
                 
