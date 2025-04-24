@@ -159,8 +159,8 @@ section h2 {
         grid-template-columns: repeat(2, 1fr); /* Two columns on larger screens */
         align-items: start; /* Align items to the top in the grid */
     }
-    #contact-form form > div:last-child {
-        grid-column: 1 / -1; /* Make the submit button span both columns */
+    #contact-form form button[type="submit"] { /* Target the submit button directly */
+        grid-column: 2 / -1; /* Make the submit button span from the second column to the end */
         text-align: right; /* Align the submit button to the right */
     }
     #contact-form form > div:nth-child(7) { /* Target the procedures dropdown */
@@ -188,6 +188,7 @@ section h2 {
     width: 100%; /* Full width within their grid cell */
     box-sizing: border-box; /* Ensure padding doesn't affect width */
 }
+
 
 #contact-form button {
     padding: 12px 20px;
