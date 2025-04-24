@@ -39,6 +39,7 @@ header {
     font-size: 24px; /* Slightly larger title */
     font-weight: 700;
     color: #003366;
+    padding-top: 5px; /* Slightly lower the title */
 }
 
 /* Navigation Bar */
@@ -94,11 +95,13 @@ nav a:hover {
 .hero h2 {
     font-size: 2.5em; /* Larger heading */
     margin-bottom: 10px;
+    color: #eee; /* Lighter text for better readability */
 }
 
 .hero h3 {
     font-size: 1.3em;
     margin-bottom: 20px;
+    color: #ddd; /* Lighter text for better readability */
 }
 
 /* Main Content */
@@ -154,12 +157,17 @@ section h2 {
 @media (min-width: 768px) {
     #contact-form form {
         grid-template-columns: repeat(2, 1fr); /* Two columns on larger screens */
+        align-items: start; /* Align items to the top in the grid */
     }
     #contact-form form > div:last-child {
         grid-column: 1 / -1; /* Make the submit button span both columns */
+        text-align: right; /* Align the submit button to the right */
     }
-    #other-procedure-container {
-        grid-column: 1 / -1; /* Ensure "Other" input spans full width */
+    #contact-form form > div:nth-child(7) { /* Target the procedures dropdown */
+        grid-column: 1 / -1; /* Make the dropdown span full width */
+    }
+    #contact-form form > div:nth-child(8) { /* Target the other procedure container */
+        grid-column: 1 / -1; /* Make the other procedure input span full width */
     }
 }
 
