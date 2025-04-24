@@ -1,22 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16999721367"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-16999721367');
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16999721367"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'AW-16999721367');
+    </script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-7L1QZTR1KH"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
         gtag('config', 'G-7L1QZTR1KH');
     </script>
     <meta charset="UTF-8">
@@ -24,60 +20,36 @@
     <title>MediConnect</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-<!-- Event snippet for Submit lead form conversion page -->
-<script>
-  gtag('event', 'conversion', {'send_to': 'AW-16999721367/jDqVCPH4n7gaEJfTjKo_'});
-</script>
-
-    
+    <script>
+        gtag('event', 'conversion', {'send_to': 'AW-16999721367/jDqVCPH4n7gaEJfTjKo_'});
+    </script>
 </head>
 <body>
-    <div class="title-box">
-        <h1>MediConnect</h1>
-    </div>
-    <header class="hero">
-        <div class="overlay">
-            <h2>Premium Medical Care - For a Fraction of the Price</h2>
-            <h3>Your single-price solution for comprehensive medical travel. Quality care without unexpected costs or exorbitant prices.</h3>
+    <header>
+        <div class="title-box">
+            <h1>MediConnect</h1>
         </div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about/">About Us</a></li>
+                <li><a href="/services/">Services</a></li>
+                <li><a href="/destinations/">Destinations</a></li>
+                <li><a href="/contact/">Contact Us</a></li>
+            </ul>
+        </nav>
     </header>
+
     <main>
-        <section>
-            <h2>Services Coming Soon! Fill Out This Form to Know When We Go Live!</h2>
-            <form action="https://formspree.io/f/mjkyjbpj" method="POST">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" required>
-                
-                <label for="procedures">Select a Procedure:</label>
-                <select id="procedures" name="procedures" required onchange="toggleOtherProcedureInput(this)">
-                    <option value="">-- Select a Procedure --</option>
-                    <option value="Dental Surgery">Dental Surgery</option>
-                    <option value="Cancer Treatment">Cancer Treatment</option>
-                    <option value="Cosmetic Surgery">Cosmetic Surgery</option>
-                    <option value="Organ Transplants">Organ Transplants</option>
-                    <option value="Orthopedic Surgery">Orthopedic Surgery</option>
-                    <option value="Cardiology Procedures">Cardiology Procedures</option>
-                    <option value="Fertility Treatments">Fertility Treatments</option>
-                    <option value="Hair Transplant">Hair Transplant</option>
-                    <option value="Other">Other</option>
-                </select>
-                
-                <!-- This input field appears only if "Other" is selected -->
-                <div id="other-procedure-container" style="display: none; margin-top: 10px;">
-                    <label for="other-procedure">Please Specify:</label>
-                    <input type="text" id="other-procedure" name="other-procedure">
-                </div>
-                
-                <button type="submit">Submit</button>
-            </form>
+        <section class="hero">
+            <div class="overlay">
+                <h2>Premium Medical Care - For a Fraction of the Price</h2>
+                <h3>Your single-price solution for comprehensive medical travel. Quality care without unexpected costs or exorbitant prices.</h3>
+                <a href="#contact-form" class="button">Request Information</a>
+            </div>
         </section>
-        <section>
+
+        <section id="how-it-works">
             <h2>How It Works</h2>
             <ul>
                 <li>
@@ -94,11 +66,48 @@
                 </li>
             </ul>
         </section>
-    </main>
+
+        <section id="contact-form">
+            <h2>Ready to Learn More? Fill Out This Form!</h2>
+            <form action="https://formspree.io/f/mjkyjbpj" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="procedures">Select a Procedure:</label>
+                <select id="procedures" name="procedures" required onchange="toggleOtherProcedureInput(this)">
+                    <option value="">-- Select a Procedure --</option>
+                    <option value="Dental Surgery">Dental Surgery</option>
+                    <option value="Cancer Treatment">Cancer Treatment</option>
+                    <option value="Cosmetic Surgery">Cosmetic Surgery</option>
+                    <option value="Organ Transplants">Organ Transplants</option>
+                    <option value="Orthopedic Surgery">Orthopedic Surgery</option>
+                    <option value="Cardiology Procedures">Cardiology Procedures</option>
+                    <option value="Fertility Treatments">Fertility Treatments</option>
+                    <option value="Hair Transplant">Hair Transplant</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <div id="other-procedure-container" style="display: none; margin-top: 10px;">
+                    <label for="other-procedure">Please Specify:</label>
+                    <input type="text" id="other-procedure" name="other-procedure">
+                </div>
+
+                <button type="submit">Submit Inquiry</button>
+            </form>
+        </section>
+
+        </main>
+
     <footer>
         <p>&copy; 2025 MediConnect. All rights reserved.</p>
     </footer>
-    
+
     <script>
         // Function to toggle the visibility of the "Other Procedure" input field
         function toggleOtherProcedureInput(selectElement) {
