@@ -1,62 +1,104 @@
-/* General Styles */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: #f4f4f4; /* Light gray background */
     color: #333;
-    line-height: 1.6;
+    line-height: 1.7; /* Improved line height for readability */
 }
 
 h1, h2, h3 {
-    margin: 0;
+    margin-top: 0; /* Reset default top margin */
+    color: #003366; /* Dark blue headings */
 }
 
 a {
-    color: #003366;
+    color: #007bff; /* Bootstrap-like blue for links */
     text-decoration: none;
+    transition: color 0.3s ease; /* Smooth hover effect */
 }
 
 a:hover {
+    color: #0056b3;
     text-decoration: underline;
+}
+
+/* Header Styles */
+header {
+    background-color: #fff;
+    padding: 1em 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space out title and navigation */
+    padding: 15px 20px; /* Add padding */
 }
 
 /* Title Box */
 .title-box {
-    text-align: center;
-    margin: 10px auto;
-    font-size: 20px; /* Reduced font size */
+    font-size: 24px; /* Slightly larger title */
     font-weight: 700;
-    color: #003366; /* Dark blue text */
+    color: #003366;
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Display links horizontally */
+}
+
+nav ul li {
+    margin-left: 20px; /* Spacing between links */
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav a {
+    color: #333;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background-color: #f0f0f0; /* Light gray hover */
+    color: #007bff;
+    text-decoration: none;
 }
 
 /* Hero Section */
 .hero {
     position: relative;
-    background-image: url('images/MediConnect.jpeg'); /* Ensure this path is correct */
+    background-image: url('images/MediConnect.jpeg'); /* Make sure this path is correct */
     background-size: cover;
     background-position: center;
-    height: 60vh;
+    height: 70vh; /* Slightly taller hero */
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
     text-align: center;
+    margin-bottom: 20px; /* Add some space below */
 }
 
 .hero .overlay {
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
-    padding: 20px;
+    background: rgba(0, 0, 0, 0.6); /* Slightly darker overlay */
+    padding: 30px;
     border-radius: 8px;
+    max-width: 80%; /* Limit overlay width */
 }
 
 .hero h2 {
-    font-size: 2em;
+    font-size: 2.5em; /* Larger heading */
+    margin-bottom: 10px;
 }
 
 .hero h3 {
-    font-size: 1.2em;
-    margin-top: 10px;
+    font-size: 1.3em;
+    margin-bottom: 20px;
 }
 
 /* Main Content */
@@ -67,75 +109,98 @@ main {
 }
 
 section {
-    margin: 20px 0;
-    padding: 20px;
+    margin-bottom: 30px; /* More spacing between sections */
+    padding: 30px;
     background: white;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* More pronounced shadow */
 }
 
-ul {
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #eee; /* Subtle section divider */
+    padding-bottom: 10px;
+}
+
+/* How It Works Section */
+#how-it-works ul {
     list-style: none;
     padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid layout */
+    gap: 20px;
 }
 
-li {
-    margin-bottom: 10px;
+#how-it-works li {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+#how-it-works strong {
+    font-size: 1.1em;
+    color: #0056b3;
 }
 
 /* Form Styling */
-form {
-    display: flex;
-    flex-direction: column;
+#contact-form form {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column layout for smaller screens */
     gap: 15px;
 }
 
-label {
-    font-weight: bold;
+@media (min-width: 768px) {
+    #contact-form form {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on larger screens */
+    }
+    #contact-form form > div:last-child {
+        grid-column: 1 / -1; /* Make the submit button span both columns */
+    }
+    #other-procedure-container {
+        grid-column: 1 / -1; /* Ensure "Other" input spans full width */
+    }
 }
 
-input, textarea, select {
-    padding: 10px;
+#contact-form label {
+    font-weight: bold;
+    display: block; /* Make labels take full width */
+    margin-bottom: 5px;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form input[type="tel"],
+#contact-form select {
+    padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 1em;
+    width: 100%; /* Full width within their grid cell */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
 }
 
-button {
-    padding: 10px;
-    background-color: #003366;
+#contact-form button {
+    padding: 12px 20px;
+    background-color: #007bff; /* Bootstrap-like blue button */
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 1em;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
 }
 
-button:hover {
-    background-color: #00509e;
+#contact-form button:hover {
+    background-color: #0056b3;
 }
 
 /* Footer */
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 25px;
     background-color: #003366;
     color: white;
-    margin-top: 20px;
-}
-/* Button Styling */
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #003366;
-    color: white;
-    text-decoration: none;
-    border-radius: 4px;
-    font-size: 1em;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-.button:hover {
-    background-color: #00509e;
+    margin-top: 40px;
 }
