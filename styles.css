@@ -161,7 +161,7 @@ section h2 {
     }
     #contact-form form button[type="submit"] { /* Target the submit button directly */
         grid-column: 2 / -1; /* Make the submit button span from the second column to the end */
-        text-align: right; /* Align the submit button to the right */
+        text-align: center; /* Center the text within the button */
     }
     #contact-form form > div:nth-child(7) { /* Target the procedures dropdown */
         grid-column: 1 / -1; /* Make the dropdown span full width */
